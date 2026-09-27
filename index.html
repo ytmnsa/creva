@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CREVA 2026 — Creative Excellence &amp; Vision Awards</title>
 <meta name="description" content="CREVA 2026 — Ideas worth recognizing. A creative recognition program for individuals, teams, startups and businesses demonstrating vision, originality and execution.">
+<meta name="description" content="CREVA 2026 — Creative Excellence & Vision Awards. Submit ideas, projects, businesses, products, experiences and concepts from 28 September to 28 October 2026.">
+<link rel="canonical" href="https://creva2026.site/">
+<meta property="og:title" content="CREVA 2026 — Creative Excellence & Vision Awards">
+<meta property="og:description" content="Ideas worth recognizing. Submissions open 28 September — 28 October 2026.">
+<meta property="og:url" content="https://creva2026.site/">
+<meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23111111'/%3E%3Crect x='30' y='30' width='40' height='40' fill='%23FF5A1F'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -189,6 +195,24 @@ h1,h2,h3{font-family:var(--display); font-weight:700; letter-spacing:-0.02em; li
   .tl-num,.tl-step h3,.tl-step p{margin-left:0;}
 }
 
+
+
+/* ---------- SCHEDULE ---------- */
+.schedule{border-bottom:1px solid var(--line);}
+.schedule-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:0; margin-top:52px; border-top:1px solid var(--line-strong);}
+.schedule-card{padding:30px 28px 32px 0; border-right:1px solid var(--line); position:relative;}
+.schedule-card:not(:first-child){padding-left:28px;}
+.schedule-card:last-child{border-right:none;}
+.schedule-date{font-family:var(--mono); font-size:0.8rem; letter-spacing:0.05em; margin-bottom:14px; color:var(--orange);}
+.schedule-card h3{font-size:1.45rem; margin-bottom:10px;}
+.schedule-card p{font-size:0.96rem; max-width:30ch;}
+.schedule-status{display:inline-block; margin-top:20px; font-family:var(--mono); font-size:0.72rem; letter-spacing:0.06em; border:1px solid var(--ink); padding:5px 8px;}
+@media (max-width:800px){
+  .schedule-grid{grid-template-columns:1fr;}
+  .schedule-card,.schedule-card:not(:first-child){padding:24px 0; border-right:none; border-bottom:1px solid var(--line);}
+  .schedule-card:last-child{border-bottom:none;}
+}
+
 /* ---------- JUDGING ---------- */
 .judging{border-bottom:1px solid var(--line);}
 .judge-title{font-size:clamp(2rem,4.6vw,3.4rem); max-width:820px; margin-bottom:56px;}
@@ -274,6 +298,7 @@ footer.site{background:var(--paper); padding-top:60px; padding-bottom:30px;}
       <a href="#about">About</a>
       <a href="#categories">Categories</a>
       <a href="#process">Process</a>
+      <a href="#schedule">Dates</a>
       <a href="#judging">Judging</a>
       <a href="#submit" class="nav-cta">Submit</a>
     </div>
@@ -287,6 +312,7 @@ footer.site{background:var(--paper); padding-top:60px; padding-bottom:30px;}
   <a href="#about">About</a>
   <a href="#categories">Categories</a>
   <a href="#process">Process</a>
+  <a href="#schedule">Dates</a>
   <a href="#judging">Judging</a>
   <a href="#contact">Contact</a>
   <a href="#submit" class="nav-cta">Submit Your Work →</a>
@@ -298,7 +324,7 @@ footer.site{background:var(--paper); padding-top:60px; padding-bottom:30px;}
 <section id="home" class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="hero-label mono">THE FIRST EDITION · 2026</span>
+      <span class="hero-label mono">THE FIRST EDITION · 28 SEP — 28 OCT 2026</span>
       <h1>CREVA 2026</h1>
       <p class="full-name">Creative Excellence &amp; Vision Awards</p>
       <p class="tagline">Ideas worth recognizing.</p>
@@ -452,14 +478,47 @@ footer.site{background:var(--paper); padding-top:60px; padding-bottom:30px;}
       <div class="tl-step">
         <div class="tl-dot"></div>
         <div class="tl-num">STEP 03</div>
-        <h3>Shortlist</h3>
-        <p>Selected submissions move forward for final consideration.</p>
+        <h3>Review</h3>
+        <p>Entries are reviewed during the one-week period following the submission deadline.</p>
       </div>
       <div class="tl-step">
         <div class="tl-dot"></div>
         <div class="tl-num">STEP 04</div>
         <h3>Recognition</h3>
-        <p>Winners are announced and recognized through CREVA 2026.</p>
+        <p>One winner is selected in each of the five CREVA 2026 categories.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SCHEDULE -->
+<section id="schedule" class="schedule section-pad">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="eyebrow">2026 TIMELINE</span>
+        <h2>A month to put your idea forward.</h2>
+      </div>
+    </div>
+    <div class="schedule-grid reveal">
+      <div class="schedule-card">
+        <div class="schedule-date">28 SEP — 28 OCT 2026</div>
+        <h3>Submissions</h3>
+        <p>Submit your idea, project, business, product, experience or concept for CREVA 2026.</p>
+        <span class="schedule-status">OPEN NOW</span>
+      </div>
+      <div class="schedule-card">
+        <div class="schedule-date">29 OCT — 04 NOV 2026</div>
+        <h3>Review Period</h3>
+        <p>Following the submission deadline, entries are reviewed against CREVA's evaluation criteria.</p>
+        <span class="schedule-status">UNDER REVIEW</span>
+      </div>
+      <div class="schedule-card">
+        <div class="schedule-date">05 NOV 2026</div>
+        <h3>Winners Announced</h3>
+        <p>One winner will be selected in each of the five CREVA 2026 categories.</p>
+        <span class="schedule-status">RESULTS</span>
       </div>
     </div>
   </div>
@@ -517,9 +576,9 @@ footer.site{background:var(--paper); padding-top:60px; padding-bottom:30px;}
     <span class="eyebrow" style="color:#C7F000;">SUBMISSIONS</span>
     <h2>HAVE AN IDEA?</h2>
     <h2 class="line2">PUT IT FORWARD.</h2>
-    <p class="desc">Submit your project, business, product, experience or concept for consideration in CREVA 2026. It takes a few minutes — click below to start your submission through our submission form.</p>
-    <a href="[GOOGLE FORM URL]" target="_blank" rel="noopener" class="btn btn-primary">SUBMIT YOUR WORK →</a>
-    <div class="submit-open mono"><span class="pulse"></span>SUBMISSIONS OPEN · 2026</div>
+    <p class="desc">Submit your project, business, product, experience or concept for consideration in CREVA 2026. Submissions are open from 28 September through 28 October 2026.</p>
+    <a href="https://forms.gle/dedg2UCtYVNLUyXX9" target="_blank" rel="noopener" class="btn btn-primary">SUBMIT YOUR WORK →</a>
+    <div class="submit-open mono"><span class="pulse"></span>SUBMISSIONS OPEN · 28 SEP — 28 OCT 2026</div>
   </div>
 </section>
 
@@ -542,22 +601,18 @@ footer.site{background:var(--paper); padding-top:60px; padding-bottom:30px;}
 <section id="contact" class="contact section-pad">
   <div class="wrap">
     <div class="contact-top reveal">
-      <span class="eyebrow">GET IN TOUCH</span>
+      <span class="eyebrow">CONNECT WITH CREVA</span>
       <h2>CREVA 2026</h2>
       <p style="max-width:40ch; margin-top:8px;">Creative Excellence &amp; Vision Awards</p>
     </div>
     <div class="contact-list reveal">
       <div class="contact-item">
-        <div class="label mono">GENERAL INQUIRIES</div>
-        <a href="mailto:[EMAIL ADDRESS]">[EMAIL ADDRESS]</a>
-      </div>
-      <div class="contact-item">
         <div class="label mono">LINKEDIN</div>
-        <a href="[LINKEDIN URL]" target="_blank" rel="noopener">CREVA on LinkedIn</a>
+        <a href="https://www.linkedin.com/company/creva-creative-excellence-vision-awards" target="_blank" rel="noopener">CREVA on LinkedIn</a>
       </div>
       <div class="contact-item">
         <div class="label mono">SUBMISSION</div>
-        <a href="[GOOGLE FORM URL]" target="_blank" rel="noopener">Submission form →</a>
+        <a href="https://forms.gle/dedg2UCtYVNLUyXX9" target="_blank" rel="noopener">Submission form →</a>
       </div>
     </div>
   </div>
@@ -576,10 +631,11 @@ footer.site{background:var(--paper); padding-top:60px; padding-bottom:30px;}
       <a href="#about">About</a>
       <a href="#categories">Categories</a>
       <a href="#process">How It Works</a>
+      <a href="#schedule">Dates</a>
       <a href="#judging">Judging</a>
       <a href="#submit">Submit</a>
       <a href="#contact">Contact</a>
-      <a href="[LINKEDIN URL]" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/creva-creative-excellence-vision-awards" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
   <div class="wrap footer-bottom">
